@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Tienda</title>
+  <link rel="stylesheet" href="interna.css" />
+</head>
+<body>
+
+  <header class="head">
+    <div class="container head-wrap">
+      <div>
+        <h1>Mini Tienda “Don Pepe”</h1>
+        <p>Ejemplo simple de una tienda pequeña (lista + mini galería + formulario).</p>
+      </div>
+
+      <nav class="nav">
+        <a href="#productos">Productos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#pedido">Pedido</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="box" id="productos">
+      <h2>Lista de productos</h2>
+      <ul class="lista">
+        <li>Arroz 1kg — 8 Bs</li>
+        <li>Azúcar 1kg — 7 Bs</li>
+        <li>Leche 1L — 6 Bs</li>
+        <li>Pan (6 unid.) — 5 Bs</li>
+        <li>Refresco 2L — 10 Bs</li>
+      </ul>
+    </section>
+
+    <section class="box" id="galeria">
+      <h2>Galería</h2>
+
+      <div class="grid">
+        <article class="prod">
+          <img class="foto" src="img/arroz.jpg" alt="Arroz 1kg">
+          <div class="pbody">
+            <b>Arroz 1kg</b>
+            <span class="precio">8 Bs</span>
+          </div>
+        </article>
+
+        <article class="prod">
+          <img class="foto" src="img/azucar.jpg" alt="Azúcar 1kg">
+          <div class="pbody">
+            <b>Azúcar 1kg</b>
+            <span class="precio">7 Bs</span>
+          </div>
+        </article>
+
+        <article class="prod">
+          <img class="foto" src="img/leche.jpg" alt="Leche 1L">
+          <div class="pbody">
+            <b>Leche 1L</b>
+            <span class="precio">6 Bs</span>
+          </div>
+        </article>
+
+        <article class="prod">
+          <img class="foto" src="img/pan.jpg" alt="Pan (6 unid.)">
+          <div class="pbody">
+            <b>Pan</b>
+            <span class="precio">5 Bs</span>
+          </div>
+        </article>
+
+        <article class="prod">
+          <img class="foto" src="img/refresco.jpg" alt="Refresco 2L">
+          <div class="pbody">
+            <b>Refresco 2L</b>
+            <span class="precio">10 Bs</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="nota2">* Las imágenes se cargan desde la carpeta <b>img/</b> (ej: <code>img/arroz.jpg</code>).</p>
+    </section>
+
+    <section class="box" id="pedido">
+      <h2>Formulario de pedido</h2>
+
+      <form class="form" action="#" method="post">
+        <div class="field">
+          <label>Nombre</label>
+          <input type="text" placeholder="Ej: Carlos" required />
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Producto</label>
+            <select required>
+              <option value="" selected disabled>Selecciona...</option>
+              <option>Arroz 1kg</option>
+              <option>Azúcar 1kg</option>
+              <option>Leche 1L</option>
+              <option>Pan (6 unid.)</option>
+              <option>Refresco 2L</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Cantidad</label>
+            <input type="number" min="1" value="1" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Comentario (opcional)</label>
+          <textarea rows="3" placeholder="Ej: Entregar por la tarde..."></textarea>
+        </div>
+
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="container">
+      <small>Mini Tienda Don Pepe — Santa Cruz, Bolivia</small>
+    </div>
+  </footer>
+
+</body>
+</html>

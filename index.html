@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabajo HTML - 3 Secciones</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- MENÚ -->
+  <nav class="menu">
+  <div class="menu-wrap">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      Mi Proyecto Web
+    </div>
+
+    <div class="links">
+      <a href="#s1">Cuestionario</a>
+      <a href="#s2">Página interna</a>
+      <a href="#s3">Página externa</a>
+    </div>
+  </div>
+</nav>
+
+  <!-- 1) CUESTIONARIO -->
+  <section class="pantalla" id="s1">
+    <div class="wrap">
+
+      <div class="titulo">
+        <div class="barrita"></div>
+        <h1>Preguntas a Resolver</h1>
+      </div>
+
+      <div class="card">
+        <h3>¿Cuál es la estructura básica de las tablas?</h3>
+        <p>Se compone de <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> y <code>&lt;td&gt;</code>.</p>
+      </div>
+
+      <div class="card">
+        <h3>¿Cuál es la estructura básica de los formularios?</h3>
+        <p>Se compone de <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>,
+          <code>&lt;textarea&gt;</code> y <code>&lt;button&gt;</code>.</p>
+      </div>
+
+      <div class="card">
+        <h3>¿Cuál es la estructura básica de los marcos?</h3>
+        <p>
+          En HTML antiguo se usaba <code>&lt;frameset&gt;</code> y <code>&lt;frame&gt;</code>.
+          Actualmente se recomienda usar marcos con <code>&lt;iframe&gt;</code>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>¿Qué significa HTML?</h3>
+        <p>HTML significa <b>HyperText Markup Language</b> (Lenguaje de Marcado de Hipertexto).</p>
+      </div>
+
+      <div class="card">
+        <h3>¿Qué es un sitio Web?</h3>
+        <p>Es un conjunto de páginas web relacionadas entre sí y accesibles en internet.</p>
+      </div>
+
+      <div class="card">
+        <h3>¿Cómo se crea un marco?</h3>
+        <p>Se crea con <code>&lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;</code> para mostrar otra página dentro de la actual.</p>
+      </div>
+
+      <div class="card">
+        <h3>¿Para qué se utilizan los marcos?</h3>
+        <p>Para dividir el contenido y mostrar páginas o secciones en la misma pantalla de forma independiente.</p>
+      </div>
+
+      <div class="card">
+        <h3>¿Cómo se crea un sitio web?</h3>
+        <p>Creando archivos (HTML/CSS) y publicándolos en un hosting o servidor.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2) PÁGINA INTERNA -->
+  <section class="pantalla" id="s2">
+    <div class="wrap">
+      <div class="titulo">
+        <div class="barrita"></div>
+        <h1>2) Página interna (Mini tienda)</h1>
+      </div>
+
+      <div class="card">
+        <h3>Mini tienda cargada en un marco (iframe)</h3>
+        <p>Ejemplo de marco usando <code>&lt;iframe&gt;</code> con un archivo del mismo proyecto (<code>interna.html</code>).</p>
+
+        <div class="marco">
+          <iframe src="interna.html" title="Página interna - Mini tienda"></iframe>
+        </div>
+
+        <small class="nota">* interna.html debe estar en la misma carpeta que index.html</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) PÁGINA EXTERNA -->
+  <section class="pantalla" id="s3">
+    <div class="wrap">
+      <div class="titulo">
+        <div class="barrita"></div>
+        <h1>3) Página externa (Marco)</h1>
+      </div>
+
+      <div class="card">
+        <h3>Página externa cargada con iframe</h3>
+        <p>Algunas webs bloquean iframes. Example casi siempre funciona.</p>
+
+        <div class="marco">
+          <iframe src="https://carlosoft0-coder.github.io/evaluacion1/" title="Página externa"></iframe>
+        </div>
+
+        <small class="nota">* Si quieres otra: prueba con https://www.wikipedia.org</small>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

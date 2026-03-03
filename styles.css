@@ -1,0 +1,142 @@
+html { scroll-behavior: smooth; }
+
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+  padding-top: 56px; /* espacio para el menú */
+}
+
+/* MENÚ */
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+.menu-wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: #0f8a3b;
+  font-size: 15px;
+}
+
+.logo-dot{
+  width: 10px;
+  height: 10px;
+  background: #0f8a3b;
+  border-radius: 50%;
+}
+
+/* links */
+.links{
+  display: flex;
+  gap: 10px;
+}
+
+.links a{
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: #0f8a3b;
+  background: #f0fdf4;
+  transition: all 0.3s ease;
+}
+
+.links a:hover{
+  background: #0f8a3b;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* SECCIONES */
+.pantalla{
+  min-height: 100vh;
+  padding: 28px 16px;
+}
+.wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* TÍTULO */
+.titulo{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.barrita{
+  width: 5px;
+  height: 32px;
+  background: #0f8a3b;
+}
+.titulo h1{
+  margin: 0;
+  color: #0f8a3b;
+  font-size: 28px;
+}
+
+/* TARJETAS */
+.card{
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  border-left: 5px solid #0f8a3b;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+.card h3{
+  margin: 0 0 8px;
+  color: #0f8a3b;
+  font-size: 18px;
+}
+.card p{
+  margin: 0;
+  line-height: 1.5;
+}
+
+code{
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* MARCO IFRAME */
+.marco{
+  margin-top: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 420px;
+  background: #fafafa;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.nota{
+  display: block;
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 12px;
+}
