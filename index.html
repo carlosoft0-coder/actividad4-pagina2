@@ -10,117 +10,202 @@
 
   <!-- MENÚ -->
   <nav class="menu">
-  <div class="menu-wrap">
-    <div class="logo">
-      <span class="logo-dot"></span>
-      Mi Proyecto Web
+    <div class="menu-wrap">
+      <div class="logo">
+        <span class="logo-dot"></span>
+        Mi Proyecto Web
+      </div>
+
+      <div class="links">
+        <a href="#p1">Cuestionario</a>
+        <a href="#p2">Página interna</a>
+        <a href="#p3">Página externa</a>
+      </div>
     </div>
+  </nav>
 
-    <div class="links">
-      <a href="#s1">Cuestionario</a>
-      <a href="#s2">Página interna</a>
-      <a href="#s3">Página externa</a>
-    </div>
-  </div>
-</nav>
+  <!-- CONTENEDOR 3 MARCOS (VERTICAL) -->
+  <main class="split" aria-label="Tres marcos verticales redimensionables">
 
-  <!-- 1) CUESTIONARIO -->
-  <section class="pantalla" id="s1">
-    <div class="wrap">
-
-      <div class="titulo">
-        <div class="barrita"></div>
-        <h1>Preguntas a Resolver</h1>
-      </div>
-
-      <div class="card">
-        <h3>¿Cuál es la estructura básica de las tablas?</h3>
-        <p>Se compone de <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> y <code>&lt;td&gt;</code>.</p>
-      </div>
-
-      <div class="card">
-        <h3>¿Cuál es la estructura básica de los formularios?</h3>
-        <p>Se compone de <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>,
-          <code>&lt;textarea&gt;</code> y <code>&lt;button&gt;</code>.</p>
-      </div>
-
-      <div class="card">
-        <h3>¿Cuál es la estructura básica de los marcos?</h3>
-        <p>
-          En HTML antiguo se usaba <code>&lt;frameset&gt;</code> y <code>&lt;frame&gt;</code>.
-          Actualmente se recomienda usar marcos con <code>&lt;iframe&gt;</code>.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>¿Qué significa HTML?</h3>
-        <p>HTML significa <b>HyperText Markup Language</b> (Lenguaje de Marcado de Hipertexto).</p>
-      </div>
-
-      <div class="card">
-        <h3>¿Qué es un sitio Web?</h3>
-        <p>Es un conjunto de páginas web relacionadas entre sí y accesibles en internet.</p>
-      </div>
-
-      <div class="card">
-        <h3>¿Cómo se crea un marco?</h3>
-        <p>Se crea con <code>&lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;</code> para mostrar otra página dentro de la actual.</p>
-      </div>
-
-      <div class="card">
-        <h3>¿Para qué se utilizan los marcos?</h3>
-        <p>Para dividir el contenido y mostrar páginas o secciones en la misma pantalla de forma independiente.</p>
-      </div>
-
-      <div class="card">
-        <h3>¿Cómo se crea un sitio web?</h3>
-        <p>Creando archivos (HTML/CSS) y publicándolos en un hosting o servidor.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 2) PÁGINA INTERNA -->
-  <section class="pantalla" id="s2">
-    <div class="wrap">
-      <div class="titulo">
-        <div class="barrita"></div>
-        <h1>2) Página interna (Mini tienda)</h1>
-      </div>
-
-      <div class="card">
-        <h3>Mini tienda cargada en un marco (iframe)</h3>
-        <p>Ejemplo de marco usando <code>&lt;iframe&gt;</code> con un archivo del mismo proyecto (<code>interna.html</code>).</p>
-
-        <div class="marco">
-          <iframe src="interna.html" title="Página interna - Mini tienda"></iframe>
+    <!-- 1) CUESTIONARIO -->
+    <section class="panel" id="p1">
+      <div class="wrap panel-wrap">
+        <div class="titulo">
+          <div class="barrita"></div>
+          <h1>1) Cuestionario</h1>
         </div>
 
-        <small class="nota">* interna.html debe estar en la misma carpeta que index.html</small>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3) PÁGINA EXTERNA -->
-  <section class="pantalla" id="s3">
-    <div class="wrap">
-      <div class="titulo">
-        <div class="barrita"></div>
-        <h1>3) Página externa (Marco)</h1>
-      </div>
-
-      <div class="card">
-        <h3>Página externa cargada con iframe</h3>
-        <p>Algunas webs bloquean iframes. Example casi siempre funciona.</p>
-
-        <div class="marco">
-          <iframe src="https://carlosoft0-coder.github.io/evaluacion1/" title="Página externa"></iframe>
+        <div class="card">
+          <h3>¿Cuál es la estructura básica de las tablas?</h3>
+          <p>Se compone de <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> y <code>&lt;td&gt;</code>.</p>
         </div>
 
-        <small class="nota">* Si quieres otra: prueba con https://www.wikipedia.org</small>
+        <div class="card">
+          <h3>¿Cuál es la estructura básica de los formularios?</h3>
+          <p>Se compone de <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>,
+            <code>&lt;textarea&gt;</code> y <code>&lt;button&gt;</code>.</p>
+        </div>
+
+        <div class="card">
+          <h3>¿Cuál es la estructura básica de los marcos?</h3>
+          <p>
+            En HTML antiguo se usaba <code>&lt;frameset&gt;</code> y <code>&lt;frame&gt;</code>.
+            Actualmente se recomienda usar marcos con <code>&lt;iframe&gt;</code>.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>¿Qué significa HTML?</h3>
+          <p>HTML significa <b>HyperText Markup Language</b> (Lenguaje de Marcado de Hipertexto).</p>
+        </div>
+
+        <div class="card">
+          <h3>¿Qué es un sitio Web?</h3>
+          <p>Es un conjunto de páginas web relacionadas entre sí y accesibles en internet.</p>
+        </div>
+
+        <div class="card">
+          <h3>¿Cómo se crea un marco?</h3>
+          <p>Se crea con <code>&lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;</code> para mostrar otra página dentro de la actual.</p>
+        </div>
+
+        <div class="card">
+          <h3>¿Para qué se utilizan los marcos?</h3>
+          <p>Para dividir el contenido y mostrar páginas o secciones en la misma pantalla de forma independiente.</p>
+        </div>
+
+        <div class="card">
+          <h3>¿Cómo se crea un sitio web?</h3>
+          <p>Creando archivos (HTML/CSS) y publicándolos en un hosting o servidor.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <div class="gutter" role="separator" aria-label="Ajustar ancho entre 1 y 2" tabindex="0"></div>
+
+    <!-- 2) PÁGINA INTERNA -->
+    <section class="panel" id="p2">
+      <div class="wrap panel-wrap">
+        <div class="titulo">
+          <div class="barrita"></div>
+          <h1>2) Página interna</h1>
+        </div>
+
+        <div class="card">
+          <h3>Pagina interna</h3>
+          <div class="marco marco-full">
+            <iframe src="interna.html" title="Página interna - Mini tienda"></iframe>
+          </div>
+
+          <small class="nota">* interna.html debe estar en la misma carpeta que index.html</small>
+        </div>
+      </div>
+    </section>
+
+    <div class="gutter" role="separator" aria-label="Ajustar ancho entre 2 y 3" tabindex="0"></div>
+
+    <!-- 3) PÁGINA EXTERNA -->
+    <section class="panel" id="p3">
+      <div class="wrap panel-wrap">
+        <div class="titulo">
+          <div class="barrita"></div>
+          <h1>3) Página externa</h1>
+        </div>
+
+        <div class="card">
+          <h3>Página externa</h3>
+
+          <div class="marco marco-full">
+            <iframe src="https://carlosoft0-coder.github.io/evaluacion1/" title="Página externa"></iframe>
+          </div>
+
+          <small class="nota">* Si quieres otra: prueba con https://www.wikipedia.org</small>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Redimensionar 3 paneles con el mouse (2 separadores)
+    (function () {
+      const split = document.querySelector(".split");
+      const panels = Array.from(document.querySelectorAll(".panel"));
+      const gutters = Array.from(document.querySelectorAll(".gutter"));
+
+      if (!split || panels.length !== 3 || gutters.length !== 2) return;
+
+      // tamaños iniciales (en px)
+      function setInitial() {
+        const w = split.getBoundingClientRect().width;
+        const g = gutters[0].getBoundingClientRect().width;
+        const available = w - g * 2;
+        panels[0].style.flexBasis = (available * 0.34) + "px";
+        panels[1].style.flexBasis = (available * 0.33) + "px";
+        panels[2].style.flexBasis = (available * 0.33) + "px";
+      }
+
+      function px(n) { return Math.max(220, n); } // mínimo por panel
+
+      function startDrag(gutterIndex, e) {
+        e.preventDefault();
+
+        const left = panels[gutterIndex];
+        const right = panels[gutterIndex + 1];
+
+        const splitRect = split.getBoundingClientRect();
+        const startX = (e.touches ? e.touches[0].clientX : e.clientX);
+
+        const leftRect = left.getBoundingClientRect();
+        const rightRect = right.getBoundingClientRect();
+
+        const startLeft = leftRect.width;
+        const startRight = rightRect.width;
+
+        function onMove(ev) {
+          const x = (ev.touches ? ev.touches[0].clientX : ev.clientX);
+          const dx = x - startX;
+
+          const newLeft = px(startLeft + dx);
+          const newRight = px(startRight - dx);
+
+          // Evitar que se pase del contenedor
+          const total = newLeft + newRight;
+          const maxTotal = splitRect.width;
+
+          // Si hay 2 gutters, el total real disponible es el ancho menos ambos gutters y el tercer panel
+          // Pero como ajustamos por pares, solo garantizamos mínimos y dejamos el resto igual.
+          left.style.flexBasis = newLeft + "px";
+          right.style.flexBasis = newRight + "px";
+        }
+
+        function stop() {
+          window.removeEventListener("mousemove", onMove);
+          window.removeEventListener("mouseup", stop);
+          window.removeEventListener("touchmove", onMove);
+          window.removeEventListener("touchend", stop);
+          document.body.classList.remove("resizing");
+        }
+
+        document.body.classList.add("resizing");
+        window.addEventListener("mousemove", onMove);
+        window.addEventListener("mouseup", stop);
+        window.addEventListener("touchmove", onMove, { passive: false });
+        window.addEventListener("touchend", stop);
+      }
+
+      gutters.forEach((gutter, i) => {
+        gutter.addEventListener("mousedown", (e) => startDrag(i, e));
+        gutter.addEventListener("touchstart", (e) => startDrag(i, e), { passive: false });
+      });
+
+      setInitial();
+      window.addEventListener("resize", () => {
+        // solo reinicia si el usuario no está arrastrando
+        if (!document.body.classList.contains("resizing")) setInitial();
+      });
+    })();
+  </script>
 
 </body>
 </html>
